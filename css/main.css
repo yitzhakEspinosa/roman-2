@@ -153,11 +153,49 @@
     
 }
 
+.seccion-dos article div img{
+    width: 37vw;
+}
+
 /*seccion servicios*/
 .seccion-iconos{
     display: flex;
     justify-content:center;
     padding-bottom: 10%;
+}
+
+.title-servicios{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.box-resultoria img{
+    width: 15vw;
+}
+
+.box-agil img{
+    width: 15vw;
+}
+
+.box-mentoria img{
+    width: 15vw;
+}
+
+.box-resultoria p{
+    font-weight: 800;
+    font-size: 1.4vw;
+}
+
+.box-agil p{
+    font-weight: 800;
+    font-size: 1.4vw;
+}
+
+.box-mentoria p{
+    font-weight: 800;
+    font-size: 1.4vw;  
 }
 
 /*video*/
@@ -296,85 +334,65 @@ footer div ul li a{
     .image-resultor {
         width: 100%;
         text-align: center;
+        padding-bottom: 50px;
     }
 
     .image-resultor img{
-        width: 60%;
+        width: 93%;
     }
 
-    .video iframe{
-        width: 50%;
-        height: 50%;
+    .logo-roman-content{
+        display: none;
     }
-}
-/*
-header{
-    padding-top: 15px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color:#fafafa;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    top: 0;
-    width: 100%;
-    position:fixed;
-    z-index: 10;   
-}
-.logo{
-    margin-right: auto;
-}
-.nav-left{   
-    float: left;  
-    width: 30%; 
-}
-*/
-/*
-header nav div{
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
-}
-*/
-/*
-.nav-right{
+
+    .parrafo-1{
+        font-size: 18px;
+    }
+
+    .boton-contact{
+        font-size: 5vw;
+    }
+
+    .caja-texto-uno{
+        margin-left: 0%;
+    }
+
+    .seccion-dos article div img{
+        width: 80vw;
+    }
+
+    .seccion-iconos{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-bottom: 70px;
+    }
+
+    .box-resultoria img{
+        width: 45vw;
+    }
+
+    .box-mentoria img{
+        width: 45vw;
+    }
+
+    .box-agil img{
+        width: 45vw;
+    }
+
+    .box-resultoria p{
+        font-size: 4vw;
+    }
     
-    justify-content: flex-end; 
-    float: right; 
+    .box-agil p{
+        font-size: 4vw;
+    }
+    
+    .box-mentoria p{
+        font-size: 4vw;  
+    }
+   
+    .video iframe{
+        width: 65%;
+        height: 65%;
+    }
 }
-
-.nav-links{
-    list-style: none;
-}
-nav div ul li{    
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.link-roman-albores{
-    padding-left: 20px;
-}
-nav div ul li a{
-    text-decoration: none;
-}
-nav div ul li a:hover{
-    text-decoration: none;
-}
-
-.icon-boton{
-    text-decoration: none;
-}
-.icon-boton:hover{
-    text-decoration: none;
-}
-.logo-roman{
-    width: 3%;
-}
-.primerseccion{
-    margin-top: 10%;
-    z-index: 1;
-
-}
-*/
-
-
-
