@@ -67,6 +67,25 @@
 
 }
 
+.nav-social li a img {
+    width: 20px;
+}
+
+/*estilo para iconos cuando se aplique responsive*/
+
+.nav-social-responsive{
+    display: none;
+}
+.icons-social{
+    display: none;
+}
+
+.nav-social-responsive li{
+    display: none;
+}
+.icons-social li{
+    display: none;
+}
 #icon-menu{
     width: 50px;
     height: 50px;
@@ -303,20 +322,62 @@ footer div ul li a{
        
     }
     
-    .nav-links{
-        
+    .nav-links{       
         display: grid !important;
         grid-template-columns: repeat(1,1fr) !important;
-        padding-left: 15px;
-        
+        grid-template-columns: 25px 25px 25px;
+        padding-left: 15px;    
     }
+
+    .nav-links li a{
+        font-size: 25px;
+    }
+
+    /*
+    ocultar nav social de movil
+    .nav-social li a{
+        font-size: 21px;
+    }
+    */
+
+    /*
     .nav-social{
         padding-left: 15px;
         display: grid !important;
         grid-template-columns: repeat(1,1fr) !important; 
         width: 100%;
+        
     }
-    
+    */
+    .nav-social li{
+        display: none;
+    }
+
+    .icons-social{
+        display: grid !important;
+        grid-template-columns: repeat(3,2fr);
+        padding-left: 20px;
+        padding-right: 50px;    
+    }
+    .icons-social li{
+        display:inline;
+        padding-bottom: 25px;
+    }
+
+    .numero-responsive{
+        grid-column: 1/4;
+    }
+
+    .numero-responsive a{
+        font-size: 21px;
+        font-weight: 700;
+    }
+
+    .icons-social li img{
+        width: 30px;
+    }
+
+
     #icon-menu{
         display: flex;
     }
