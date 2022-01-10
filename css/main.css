@@ -232,6 +232,95 @@
     padding-bottom: 10%;
 }
 
+.experto-content{
+    display:grid; 
+    grid-template-columns:repeat(3,1fr);
+}
+
+.experto-content .img-left img{
+    width: 12%;
+}
+
+.experto-content .img-rigth{
+    display: flex;
+    justify-content: end;
+}
+
+.experto-content .img-rigth img{
+    width: 20%;
+}
+
+.experto-content ul{
+    text-align:left ; 
+    justify-items: center;
+}
+
+.experto-content ul h3{
+    text-align: left; 
+    font-size: 40px; 
+    font-weight: 600;
+}
+
+.experto-content ul li{
+    font-size: 30px; 
+    font-weight: 400;
+}
+
+/*formulario*/
+.form-register{
+    padding:10%;
+    display: inline-block;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(1,1fr) !important;
+}
+
+.field{
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    outline: none;
+    background: #F5F5F5;
+    border-radius: 25px;
+    border: 0px;
+}
+
+.form-register p{
+    font-weight: 700;
+    font-size: 24px;
+}
+.input{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    outline: none;
+    background: #F5F5F5;
+    border-radius: 25px;
+    border: 0px;
+}
+
+.submit{
+    width: 30%;
+    border-radius: 20px;
+    background-color: #3FA9F5;
+    border: 0px;
+    outline: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+.submit:active{
+    border: 0px;
+    outline: none;
+    background-color: #43A2E7 ;
+}
 /* estilo footer*/
 footer{
     background-color: black;  
@@ -260,8 +349,16 @@ footer div ul li a{
     -ms-grid-column-align: center;
 }
 
+.logo-roman-footer-content{
+    align-items: center;
+}
+
 .logo-roman-footer{
     margin-right: -15%;
+}
+
+.logo-roman-footer img{
+    width: 20%;
 }
 .terminos{
     align-items: center;
@@ -280,13 +377,33 @@ footer div ul li a{
 
 }
 
+.redes-sociales-container ul {
+    text-align: center;
+}
+
+.redes-sociales-container ul li{
+    padding-top: 10px; 
+    padding-bottom: 10px;
+}
+
+.linea-uno li a img{
+    width: 35%;
+
+}
+
+.linea-dos li a img{
+    width: 35%;
+}
+
 .linea-tres{
     grid-column: 1/3;
     text-align: center;
     -ms-grid-column-align: center;
 }
 
-
+.linea-tres li a img{
+    width: 50%;
+}
 
 /* telefono*/
 @media screen and (max-width: 800px){
@@ -418,6 +535,11 @@ footer div ul li a{
         margin-left: 0%;
     }
 
+
+    .seccion-dos article p{
+        font-size: 18px;
+    }
+
     .seccion-dos article div img{
         width: 80vw;
     }
@@ -456,4 +578,124 @@ footer div ul li a{
         width: 65%;
         height: 65%;
     }
+
+    /* seccion experto*/
+    .seccion-experto{
+        padding-bottom: 10%;
+    }
+    
+    .experto-content{
+        display:grid; 
+        grid-template-columns:repeat(3,1fr);
+    }
+    
+    .experto-content .img-left img{
+        width: 22%;
+    }
+    
+    .experto-content .img-rigth{
+        display: flex;
+        justify-content: end;
+    }
+    
+    .experto-content .img-rigth img{
+        width: 32%;
+    }
+    
+    .experto-content ul{
+        text-align:left ; 
+        justify-items: center;
+    }
+    
+    .experto-content ul h3{
+        text-align: left; 
+        font-size: 23px; 
+        font-weight: 600;
+    }
+    
+    .experto-content ul li{
+        font-size: 18px; 
+        font-weight: 400;
+    }
+
+    /*seccion footer*/
+
+    footer div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: flex-start;
+        
+    }
+
+    .social-title{
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 800;
+        grid-column: 1/3;
+        text-align: center;
+        -ms-grid-column-align: center;
+    }
+    
+    .logo-roman-footer{
+        margin-right: -15%;
+    }
+    .logo-roman-footer img{
+        width: 13%;
+    }
+
+    .logo-roman-footer-content{
+        align-items: center;
+        padding-bottom: 55px;
+        padding-left: 30px;
+    }
+
+    .terminos{
+        align-items: center;
+        padding-bottom: 55px;
+        padding-left: 30px;
+    }
+    
+    .sitios-web{
+        align-items:center;
+        padding-bottom: 55px;
+        padding-left: 30px;
+    }
+    
+     
+    /*Estilo Iconos*/
+    .redes-sociales-container{
+
+        display: inline;
+       text-align: center;
+       /*        display: grid; 
+        grid-template-columns:repeat(2,1fr 1fr 1fr);
+        grid-template-columns: 100px 100px;
+        */
+    
+    }
+    
+    .redes-sociales-container ul{
+        display: inline-flex;
+    }
+
+    .linea-uno li a img{
+        width: 20%;
+    
+    }
+    
+    .linea-dos li a img{
+        width: 20%;
+    }
+
+    .linea-tres li a img{
+        width: 35%;
+    }
+
+    .linea-tres{
+        grid-column: 1/3;
+        text-align: center;
+        -ms-grid-column-align: center;
+    }
+    
+
 }
