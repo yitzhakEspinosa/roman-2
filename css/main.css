@@ -1,4 +1,4 @@
-*{
+   *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -638,9 +638,11 @@ footer div ul li a{
     
     .logo-roman-footer{
         margin-right: -15%;
+        width: 100%;
     }
     .logo-roman-footer img{
         width: 13%;
+        
     }
 
     .logo-roman-footer-content{
@@ -689,6 +691,304 @@ footer div ul li a{
 
     .linea-tres li a img{
         width: 35%;
+    }
+
+    .linea-tres{
+        grid-column: 1/3;
+        text-align: center;
+        -ms-grid-column-align: center;
+    }
+    
+
+}
+
+
+
+@media screen and (max-width: 550px){
+
+
+    .header{
+        background-color: #ffffff ;
+    }
+   /* .move-container-all{
+        transform: translatex( 300px) !important;
+    }
+
+    .container-all{
+        transition: all 300ms !important;
+    }
+    */
+    .menu{
+        height: calc(100% - 80px);
+        position: fixed;
+        top: 105px;
+        left: 0;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.24) 8px 8px 8px;
+        overflow: hidden;
+        text-align:left!important; 
+        transform: translateX(-600px);
+        transition: all 1s;
+    }
+
+    .menu-animate{
+       width: 300px; 
+       transform: translateX(0px); 
+       
+    }
+    
+    .nav-links{       
+        display: grid !important;
+        grid-template-columns: repeat(1,1fr) !important;
+        grid-template-columns: 25px 25px 25px;
+        padding-left: 15px;    
+    }
+
+    .nav-links li a{
+        font-size: 25px;
+    }
+
+    /*
+    ocultar nav social de movil
+    .nav-social li a{
+        font-size: 21px;
+    }
+    */
+
+    /*
+    .nav-social{
+        padding-left: 15px;
+        display: grid !important;
+        grid-template-columns: repeat(1,1fr) !important; 
+        width: 100%;
+        
+    }
+    */
+    .nav-social li{
+        display: none;
+    }
+
+    .icons-social{
+        display: grid !important;
+        grid-template-columns: repeat(3,2fr);
+        padding-left: 20px;
+        padding-right: 50px;    
+    }
+    .icons-social li{
+        display:inline;
+        padding-bottom: 25px;
+    }
+
+    .numero-responsive{
+        grid-column: 1/4;
+    }
+
+    .numero-responsive a{
+        font-size: 21px;
+        font-weight: 700;
+    }
+
+    .icons-social li img{
+        width: 30px;
+    }
+
+
+    #icon-menu{
+        display: flex;
+    }
+
+    /* contenido*/
+
+    .contentuno{
+        
+        display: grid !important;
+        grid-template-columns: repeat(1,1fr);
+
+
+    }
+
+    .image-resultor {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .image-resultor img{
+        width: 93%;
+    }
+
+    .logo-roman-content{
+        display: none;
+    }
+
+    .parrafo-1{
+        font-size: 18px;
+    }
+
+    .boton-contact{
+        font-size: 5vw;
+    }
+
+    .caja-texto-uno{
+        margin-left: 0%;
+    }
+
+
+    .seccion-dos article p{
+        font-size: 18px;
+    }
+
+    .seccion-dos article div img{
+        width: 80vw;
+    }
+
+    .seccion-iconos{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-bottom: 70px;
+    }
+
+    .box-resultoria img{
+        width: 45vw;
+    }
+
+    .box-mentoria img{
+        width: 45vw;
+    }
+
+    .box-agil img{
+        width: 45vw;
+    }
+
+    .box-resultoria p{
+        font-size: 4vw;
+    }
+    
+    .box-agil p{
+        font-size: 4vw;
+    }
+    
+    .box-mentoria p{
+        font-size: 4vw;  
+    }
+   
+    .video iframe{
+        width: 65%;
+        height: 65%;
+    }
+
+    /* seccion experto*/
+    .seccion-experto{
+        padding-bottom: 10%;
+    }
+    
+    .experto-content{
+        display:grid; 
+        grid-template-columns:repeat(3,1fr);
+    }
+    
+    .experto-content .img-left img{
+        width: 22%;
+    }
+    
+    .experto-content .img-rigth{
+        display: flex;
+        justify-content: end;
+    }
+    
+    .experto-content .img-rigth img{
+        width: 32%;
+    }
+    
+    .experto-content ul{
+        text-align:left ; 
+        justify-items: center;
+    }
+    
+    .experto-content ul h3{
+        text-align: left; 
+        font-size: 23px; 
+        font-weight: 600;
+    }
+    
+    .experto-content ul li{
+        font-size: 18px; 
+        font-weight: 400;
+    }
+
+    /*seccion footer*/
+
+    footer div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: flex-start;
+        
+    }
+
+    .social-title{
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 800;
+        grid-column: 1/3;
+        text-align: center;
+        -ms-grid-column-align: center;
+    }
+    
+    .logo-roman-footer{
+        margin-right: -15%;
+        width: 100%;
+    }
+    .logo-roman-footer img{
+        width: 13%;
+        
+    }
+
+    .logo-roman-footer-content{
+        align-items: center;
+        padding-bottom: 55px;
+        padding-left: 30px;
+    }
+
+    .terminos{
+        align-items: center;
+        padding-bottom: 55px;
+        padding-left: 30px;
+    }
+    
+    .sitios-web{
+        align-items:center;
+        padding-bottom: 55px;
+        padding-left: 30px;
+    }
+    
+     
+    /*Estilo Iconos*/
+    .redes-sociales-container{
+
+        display: inline;
+       text-align: center;
+       /*        display: grid; 
+        grid-template-columns:repeat(2,1fr 1fr 1fr);
+        grid-template-columns: 100px 100px;
+        */
+    
+    }
+    
+    .redes-sociales-container ul{
+        display: inline-flex;
+    }
+
+    .linea-uno li a img{
+        width: 12%;
+    
+    }
+    
+    .linea-dos li a img{
+        width: 12%;
+    }
+
+    .linea-tres li a img{
+        width: 25%;
     }
 
     .linea-tres{
